@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-web
+  labels:
+    app: nginx-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-web
+  template:
+    metadata:
+      labels:
+        app: nginx-web
+    spec:
+      containers:
+      - name: nginx-web
+        image: registry.digitalocean.com/ddd/ddd_backend_web:v1.0
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: nginx-config
+          mountPath: "/etc/nginx/conf.d/"
+          readOnly: false
+        env:
+          - name: SWAGGER_UI_NGINX_AUTH_USER
+            valueFrom:
+              secretKeyRef:
+                name: swagger-ui-auth
+                key: auth_user
+          - name: SWAGGER_UI_NGINX_AUTH_PASSWD
+            valueFrom:
+              secretKeyRef:
+                name: swagger-ui-auth
+                key: auth_pass
+      volumes:
+        - name: nginx-config
+          configMap:
+            name: nginx-config

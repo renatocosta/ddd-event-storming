@@ -1,0 +1,4 @@
+@extends('order-base', ['top_text' => sprintf('<p>Hi, %s.</p><p>We\'ve Authorized Your Credit Card.</p>', $user_name),
+                       'middle_text' => 'Thank you for choosing ddd.com for your upcoming cleaning. We placed an authorization on your credit card to make sure it\'s working.<br><br> But don\'t worry, we will only charge your card once the cleaning has been completed. If no cleaner accepts your request or the cleaning is canceled, the authorization will be canceled too.<br><br> Please note that the authorization is for an estimated amount. The final charge will be based on the cleaner\'s actual time.',
+                       'magic_link' => '',  
+                       'magic_link_text' => ''])

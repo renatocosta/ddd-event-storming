@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddd-backend-worker-crmimportleads
+  labels:
+    app: phpfpm-worker-crmimportleads
+    version: "d4b6446"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpfpm-worker-crmimportleads
+  template:
+    metadata:
+      labels:
+        app: phpfpm-worker-crmimportleads
+    spec:
+      containers:
+        - name: phpfpm-worker-crmimportleads
+          image: registry.digitalocean.com/ddd/ddd-backend-php:d4b6446
+          command: ["/bin/sh", "-c"]
+          args:
+            ["-c", "php artisan consumers:work --topic=crm.leads.importlead;"]
+          ports:
+            - containerPort: 9000
+              name: php
+          envFrom:
+            - secretRef:
+                name: phpfpm-env

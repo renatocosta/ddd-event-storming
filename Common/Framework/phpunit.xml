@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" backupStaticAttributes="false" colors="true" convertErrorsToExceptions="true" convertNoticesToExceptions="true" convertWarningsToExceptions="true" processIsolation="false" stopOnFailure="true" testdox="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+    <coverage cacheDirectory=".phpunit.cache/code-coverage" processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">../../src</directory>
+        </include>
+        <exclude>
+            <directory suffix=".php">src/Infrastructure</directory>
+            <directory suffix=".php">src/Application/EventHandlers</directory>
+            <directory suffix=".php">src/Interfaces</directory>
+        </exclude>
+    </coverage>
+    <testsuites>
+        <testsuite name="Order">
+            <directory suffix="Test.php">./../../tests/Order</directory>
+        </testsuite>
+        <testsuite name="User">
+            <directory suffix="Test.php">./../../tests/User</directory>
+        </testsuite>
+        <testsuite name="Notification">
+            <directory suffix="Test.php">./../../tests/Notification</directory>
+        </testsuite>
+        <testsuite name="ProjectReports">
+            <directory suffix="Test.php">./../../tests/ProjectReports</directory>
+        </testsuite>        
+        <testsuite name="EndToEnd">
+            <directory suffix="Test.php">./../../tests</directory>
+        </testsuite>                       
+    </testsuites>
+</phpunit>

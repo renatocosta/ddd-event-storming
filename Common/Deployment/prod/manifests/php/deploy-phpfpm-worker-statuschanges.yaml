@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddd-backend-worker-statuschanges
+  labels:
+    app: phpfpm-worker-statuschanges
+    version: "d4b6446"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpfpm-worker-statuschanges
+  template:
+    metadata:
+      labels:
+        app: phpfpm-worker-statuschanges
+    spec:
+      containers:
+        - name: phpfpm-worker-statuschanges
+          image: registry.digitalocean.com/ddd/ddd-backend-php:d4b6446
+          command: ["/bin/sh", "-c"]
+          args:
+            [
+              "-c",
+              "php artisan consumers:work --topic=externalpartner.project.statuschanges;",
+            ]
+          ports:
+            - containerPort: 9000
+              name: php
+          envFrom:
+            - secretRef:
+                name: phpfpm-env

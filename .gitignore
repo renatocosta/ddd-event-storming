@@ -1,0 +1,14 @@
+/.idea
+/.vscode
+/Common/Framework/public/hot
+/Common/Framework/public/storage
+/Common/Framework/storage/*.key
+/Common/Framework/vendor
+/Common/Framework/.env
+/Common/Framework/.env.backup
+/Common/Framework/.phpunit.result.cache
+/Common/Framework/.phpunit.cache
+/Common/Framework/Homestead.json
+/Common/Framework/Homestead.yaml
+/Common/Framework/npm-debug.log
+/Common/Framework/yarn-error.log

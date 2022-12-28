@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddd-backend
+  labels:
+    app: phpfpm
+    version: "d4b6446"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpfpm
+  template:
+    metadata:
+      labels:
+        app: phpfpm
+    spec:
+      # initContainers:
+      #   - name: migrations
+      #     image: registry.digitalocean.com/ddd/ddd-backend-php:d4b6446
+      #     command:
+      #       - php
+      #     args:
+      #       - artisan
+      #       - migrate
+      #       - --force
+      #     envFrom:
+      #     - secretRef:
+      #         name: phpfpm-env
+      containers:
+      - name: phpfpm
+        image: registry.digitalocean.com/ddd/ddd-backend-php:d4b6446
+        ports:
+        - containerPort: 9000
+          name: php
+        envFrom:
+        - secretRef:
+            name: phpfpm-env

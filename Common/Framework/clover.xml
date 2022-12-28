@@ -1,0 +1,2199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1643830745">
+  <project timestamp="1643830745">
+    <file name="/var/www/src/Application/EventHandlers/Notification/NotificationEmailNotifiedEventHandler.php">
+      <class name="Application\EventHandlers\Notification\NotificationEmailNotifiedEventHandler" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="1" elements="12" coveredelements="2"/>
+      </class>
+      <line num="13" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="27" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="29" type="stmt" count="2"/>
+      <metrics loc="31" ncloc="31" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="1" elements="12" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/Notification/NotificationEmailPublishedEventHandler.php">
+      <class name="Application\EventHandlers\Notification\NotificationEmailPublishedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="3" elements="11" coveredelements="5"/>
+      </class>
+      <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="15" type="stmt" count="33"/>
+      <line num="17" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="26" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <metrics loc="30" ncloc="30" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="3" elements="11" coveredelements="5"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/Notification/NotificationSmsNotifiedEventHandler.php">
+      <class name="Application\EventHandlers\Notification\NotificationSmsNotifiedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="3" elements="15" coveredelements="5"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="17" type="stmt" count="33"/>
+      <line num="19" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="35" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <metrics loc="39" ncloc="39" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="3" elements="15" coveredelements="5"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/Notification/NotificationSmsPublishedEventHandler.php">
+      <class name="Application\EventHandlers\Notification\NotificationSmsPublishedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="3" elements="11" coveredelements="5"/>
+      </class>
+      <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="15" type="stmt" count="33"/>
+      <line num="17" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="26" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <metrics loc="30" ncloc="30" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="3" elements="11" coveredelements="5"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/Order/OrderConfirmedEventHandler.php">
+      <class name="Application\EventHandlers\Order\OrderConfirmedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="18" type="stmt" count="7"/>
+      <line num="20" type="method" name="handle" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="32" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="34" type="stmt" count="4"/>
+      <metrics loc="36" ncloc="36" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/Order/OrderCreatedEventHandler.php">
+      <class name="Application\EventHandlers\Order\OrderCreatedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="17" type="stmt" count="7"/>
+      <line num="19" type="method" name="handle" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="29" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="31" type="stmt" count="4"/>
+      <metrics loc="33" ncloc="33" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/Order/OrderFailedEventHandler.php">
+      <class name="Application\EventHandlers\Order\OrderFailedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="3" elements="9" coveredelements="5"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="16" type="stmt" count="5"/>
+      <line num="18" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="26" type="stmt" count="2"/>
+      <metrics loc="28" ncloc="28" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="3" elements="9" coveredelements="5"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/Order/OrderUncreatedEventHandler.php">
+      <class name="Application\EventHandlers\Order\OrderUncreatedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="3" elements="9" coveredelements="5"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="16" type="stmt" count="5"/>
+      <line num="18" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="26" type="stmt" count="2"/>
+      <metrics loc="28" ncloc="28" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="3" elements="9" coveredelements="5"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/ProjectReports/ProjectChangedEventHandler.php">
+      <class name="Application\EventHandlers\ProjectReports\ProjectChangedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="3" elements="12" coveredelements="5"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="19" type="stmt" count="33"/>
+      <line num="21" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="30" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <metrics loc="34" ncloc="34" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="3" elements="12" coveredelements="5"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/User/UserAssignedToOrderEventHandler.php">
+      <class name="Application\EventHandlers\User\UserAssignedToOrderEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="10" coveredelements="10"/>
+      </class>
+      <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="15" type="stmt" count="7"/>
+      <line num="17" type="method" name="handle" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="24" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="26" type="stmt" count="2"/>
+      <metrics loc="28" ncloc="28" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="10" coveredelements="10"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/User/UserAuthenticatedEventHandler.php">
+      <class name="Application\EventHandlers\User\UserAuthenticatedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="18" coveredelements="18"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="22" type="stmt" count="7"/>
+      <line num="24" type="method" name="handle" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="41" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <metrics loc="45" ncloc="45" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="18" coveredelements="18"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/User/UserIdentifiedEventHandler.php">
+      <class name="Application\EventHandlers\User\UserIdentifiedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="19" type="stmt" count="7"/>
+      <line num="21" type="method" name="handle" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="32" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="34" type="stmt" count="2"/>
+      <metrics loc="36" ncloc="36" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/User/UserUpdatedEventHandler.php">
+      <class name="Application\EventHandlers\User\UserUpdatedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="9" coveredelements="0"/>
+      </class>
+      <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="17" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="23" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <metrics loc="27" ncloc="27" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="9" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/User/UserVerificationCodeRequestedEventHandler.php">
+      <class name="Application\EventHandlers\User\UserVerificationCodeRequestedEventHandler" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="9" coveredelements="0"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="18" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="28" ncloc="28" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="9" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/EventHandlers/User/UserWithOrderNumberAuthenticatedEventHandler.php">
+      <class name="Application\EventHandlers\User\UserWithOrderNumberAuthenticatedEventHandler" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+      </class>
+      <line num="12" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="18" type="method" name="isSubscribedTo" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <metrics loc="22" ncloc="22" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Email/INotificationEmailNotifyUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Email/INotificationEmailPublishUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Email/NotificationEmailInput.php">
+      <class name="Application\UseCases\Notification\Email\NotificationEmailInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="10" type="stmt" count="2"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Email/NotificationEmailNotifyUseCase.php">
+      <class name="Application\UseCases\Notification\Email\NotificationEmailNotifyUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="13" type="stmt" count="33"/>
+      <line num="15" type="method" name="execute" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <metrics loc="20" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Email/NotificationEmailPublishUseCase.php">
+      <class name="Application\UseCases\Notification\Email\NotificationEmailPublishUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="13" type="stmt" count="33"/>
+      <line num="15" type="method" name="execute" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <metrics loc="20" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Sms/INotificationSmsNotifyUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Sms/INotificationSmsPublishUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Sms/NotificationSmsInput.php">
+      <class name="Application\UseCases\Notification\Sms\NotificationSmsInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="10" type="stmt" count="3"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Sms/NotificationSmsNotifyUseCase.php">
+      <class name="Application\UseCases\Notification\Sms\NotificationSmsNotifyUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="13" type="stmt" count="33"/>
+      <line num="15" type="method" name="execute" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <metrics loc="20" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Notification/Sms/NotificationSmsPublishUseCase.php">
+      <class name="Application\UseCases\Notification\Sms\NotificationSmsPublishUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="13" type="stmt" count="33"/>
+      <line num="15" type="method" name="execute" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="18" type="stmt" count="2"/>
+      <line num="19" type="stmt" count="2"/>
+      <metrics loc="20" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Order/Confirm/ConfirmOrderInput.php">
+      <class name="Application\UseCases\Order\Confirm\ConfirmOrderInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="10" type="stmt" count="5"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Order/Confirm/ConfirmOrderUseCase.php">
+      <class name="Application\UseCases\Order\Confirm\ConfirmOrderUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="19" coveredelements="19"/>
+      </class>
+      <line num="18" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="20" type="stmt" count="5"/>
+      <line num="22" type="method" name="execute" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="24" type="stmt" count="5"/>
+      <line num="26" type="stmt" count="5"/>
+      <line num="27" type="stmt" count="5"/>
+      <line num="28" type="stmt" count="5"/>
+      <line num="30" type="stmt" count="5"/>
+      <line num="31" type="stmt" count="5"/>
+      <line num="33" type="stmt" count="5"/>
+      <line num="34" type="stmt" count="5"/>
+      <line num="35" type="stmt" count="5"/>
+      <line num="36" type="stmt" count="5"/>
+      <line num="38" type="stmt" count="4"/>
+      <line num="39" type="stmt" count="4"/>
+      <line num="40" type="stmt" count="4"/>
+      <line num="42" type="stmt" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <metrics loc="44" ncloc="44" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="19" coveredelements="19"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Order/Confirm/IConfirmOrderUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Order/Create/CreateOrderInput.php">
+      <class name="Application\UseCases\Order\Create\CreateOrderInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="10" type="stmt" count="2"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Order/Create/CreateOrderUseCase.php">
+      <class name="Application\UseCases\Order\Create\CreateOrderUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="19" coveredelements="19"/>
+      </class>
+      <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="21" type="stmt" count="2"/>
+      <line num="23" type="method" name="execute" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="25" type="stmt" count="2"/>
+      <line num="27" type="stmt" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <line num="29" type="stmt" count="2"/>
+      <line num="31" type="stmt" count="2"/>
+      <line num="32" type="stmt" count="2"/>
+      <line num="33" type="stmt" count="2"/>
+      <line num="34" type="stmt" count="2"/>
+      <line num="36" type="stmt" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="39" type="stmt" count="2"/>
+      <line num="40" type="stmt" count="2"/>
+      <line num="41" type="stmt" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <line num="44" type="stmt" count="2"/>
+      <metrics loc="45" ncloc="45" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="19" coveredelements="19"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Order/Create/ICreateOrderUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Order/Queries/GetOrderQuery.php">
+      <class name="Application\UseCases\Order\Queries\GetOrderQuery" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="18" type="method" name="execute" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="28" ncloc="28" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/Order/Queries/IGetOrderQuery.php">
+      <metrics loc="11" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/ProjectReports/Change/ChangeProjectInput.php">
+      <class name="Application\UseCases\ProjectReports\Change\ChangeProjectInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="10" type="stmt" count="3"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/ProjectReports/Change/ChangeProjectUseCase.php">
+      <class name="Application\UseCases\ProjectReports\Change\ChangeProjectUseCase" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="15" coveredelements="15"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="19" type="stmt" count="33"/>
+      <line num="21" type="method" name="execute" visibility="public" complexity="2" crap="2" count="3"/>
+      <line num="24" type="stmt" count="3"/>
+      <line num="25" type="stmt" count="2"/>
+      <line num="26" type="stmt" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <line num="30" type="stmt" count="2"/>
+      <line num="32" type="stmt" count="2"/>
+      <line num="34" type="stmt" count="2"/>
+      <line num="35" type="stmt" count="2"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <metrics loc="39" ncloc="39" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="15" coveredelements="15"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/ProjectReports/Change/IChangeProjectUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/ProjectReports/Queries/GetProjectQuery.php">
+      <class name="Application\UseCases\ProjectReports\Queries\GetProjectQuery" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="19" type="method" name="execute" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <metrics loc="29" ncloc="29" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/ProjectReports/Queries/IGetProjectQuery.php">
+      <metrics loc="10" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Authenticate/AuthenticateUserInput.php">
+      <class name="Application\UseCases\User\Authenticate\AuthenticateUserInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="10" type="stmt" count="1"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Authenticate/AuthenticateUserUseCase.php">
+      <class name="Application\UseCases\User\Authenticate\AuthenticateUserUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </class>
+      <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="15" type="stmt" count="7"/>
+      <line num="17" type="method" name="execute" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <metrics loc="23" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Authenticate/IAuthenticateUserUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/AuthenticateWithOrderNumber/AuthenticateWithOrderNumberUserInput.php">
+      <class name="Application\UseCases\User\AuthenticateWithOrderNumber\AuthenticateWithOrderNumberUserInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/AuthenticateWithOrderNumber/AuthenticateWithOrderNumberUserUseCase.php">
+      <class name="Application\UseCases\User\AuthenticateWithOrderNumber\AuthenticateWithOrderNumberUserUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="16" type="method" name="execute" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <metrics loc="22" ncloc="22" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/AuthenticateWithOrderNumber/IAuthenticateWithOrderNumberUserUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Identify/IIdentifyUserUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Identify/IdentifyUserInput.php">
+      <class name="Application\UseCases\User\Identify\IdentifyUserInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="10" type="stmt" count="1"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Identify/IdentifyUserUseCase.php">
+      <class name="Application\UseCases\User\Identify\IdentifyUserUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="18" type="stmt" count="7"/>
+      <line num="20" type="method" name="execute" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <metrics loc="25" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/RequestCode/IRequestCodeUserUseCase.php">
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/RequestCode/RequestCodeUserInput.php">
+      <class name="Application\UseCases\User\RequestCode\RequestCodeUserInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/RequestCode/RequestCodeUserUseCase.php">
+      <class name="Application\UseCases\User\RequestCode\RequestCodeUserUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="20" type="method" name="execute" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="27" ncloc="27" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Update/IUpdateUserUseCase.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Update/UpdateUserInput.php">
+      <class name="Application\UseCases\User\Update\UpdateUserInput" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Application/UseCases/User/Update/UpdateUserUseCase.php">
+      <class name="Application\UseCases\User\Update\UpdateUserUseCase" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="20" type="method" name="execute" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <metrics loc="26" ncloc="26" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Notification/Events/NotificationEmailNotified.php">
+      <class name="Domain\Model\Notification\Events\NotificationEmailNotified" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Notification/Events/NotificationEmailPublished.php">
+      <class name="Domain\Model\Notification\Events\NotificationEmailPublished" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Notification/Events/NotificationSmsNotified.php">
+      <class name="Domain\Model\Notification\Events\NotificationSmsNotified" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Notification/Events/NotificationSmsPublished.php">
+      <class name="Domain\Model\Notification\Events\NotificationSmsPublished" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Notification/Notification.php">
+      <metrics loc="27" ncloc="27" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Notification/NotificationEntity.php">
+      <class name="Domain\Model\Notification\NotificationEntity" namespace="global">
+        <metrics complexity="13" methods="9" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="10" elements="29" coveredelements="11"/>
+      </class>
+      <line num="23" type="method" name="asSender" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="29" type="method" name="asRecipient" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="35" type="method" name="body" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="40" type="method" name="subject" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="45" type="method" name="sender" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="50" type="method" name="recipient" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="55" type="method" name="publish" visibility="public" complexity="3" crap="3.14" count="2"/>
+      <line num="57" type="stmt" count="2"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="60" type="stmt" count="2"/>
+      <line num="61" type="stmt" count="2"/>
+      <line num="63" type="method" name="notify" visibility="public" complexity="3" crap="3.14" count="2"/>
+      <line num="65" type="stmt" count="2"/>
+      <line num="66" type="stmt" count="0"/>
+      <line num="68" type="stmt" count="2"/>
+      <line num="69" type="stmt" count="2"/>
+      <line num="71" type="method" name="of" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="73" type="stmt" count="4"/>
+      <line num="74" type="stmt" count="4"/>
+      <line num="75" type="stmt" count="4"/>
+      <line num="76" type="stmt" count="4"/>
+      <metrics loc="78" ncloc="78" classes="1" methods="9" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="10" elements="29" coveredelements="11"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Notification/NotificationMessage.php">
+      <class name="Domain\Model\Notification\NotificationMessage" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="30" ncloc="30" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Notification/UnableToHandleNotification.php">
+      <class name="Domain\Model\Notification\UnableToHandleNotification" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="11" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/Events/OrderConfirmed.php">
+      <class name="Domain\Model\Order\Events\OrderConfirmed" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/Events/OrderCreated.php">
+      <class name="Domain\Model\Order\Events\OrderCreated" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/Events/OrderFailed.php">
+      <class name="Domain\Model\Order\Events\OrderFailed" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/Events/OrderUncreated.php">
+      <class name="Domain\Model\Order\Events\OrderUncreated" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/IOrderRepository.php">
+      <metrics loc="14" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/Order.php">
+      <metrics loc="53" ncloc="53" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/OrderEntity.php">
+      <class name="Domain\Model\Order\OrderEntity" namespace="global">
+        <metrics complexity="20" methods="20" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="33" elements="62" coveredelements="47"/>
+      </class>
+      <line num="38" type="method" name="fromState" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="40" type="stmt" count="10"/>
+      <line num="41" type="stmt" count="10"/>
+      <line num="44" type="method" name="create" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="46" type="stmt" count="3"/>
+      <line num="47" type="stmt" count="2"/>
+      <line num="48" type="stmt" count="2"/>
+      <line num="50" type="method" name="uncreate" visibility="public" complexity="1" crap="1.30" count="4"/>
+      <line num="52" type="stmt" count="4"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="56" type="method" name="fail" visibility="public" complexity="1" crap="1.30" count="1"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="59" type="stmt" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="62" type="method" name="confirm" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="64" type="stmt" count="7"/>
+      <line num="65" type="stmt" count="2"/>
+      <line num="66" type="stmt" count="2"/>
+      <line num="68" type="method" name="getStatus" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="70" type="stmt" count="7"/>
+      <line num="73" type="method" name="payload" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="75" type="stmt" count="6"/>
+      <line num="78" type="method" name="smsVerificationCode" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="80" type="stmt" count="1"/>
+      <line num="83" type="method" name="withSmsVerificationCode" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="85" type="stmt" count="5"/>
+      <line num="86" type="stmt" count="5"/>
+      <line num="88" type="method" name="attachToken" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="90" type="stmt" count="1"/>
+      <line num="91" type="stmt" count="1"/>
+      <line num="93" type="method" name="token" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="95" type="stmt" count="0"/>
+      <line num="98" type="method" name="of" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="100" type="stmt" count="3"/>
+      <line num="101" type="stmt" count="3"/>
+      <line num="102" type="stmt" count="3"/>
+      <line num="103" type="stmt" count="3"/>
+      <line num="104" type="stmt" count="3"/>
+      <line num="107" type="method" name="from" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="109" type="stmt" count="0"/>
+      <line num="110" type="stmt" count="0"/>
+      <line num="113" type="method" name="orderNumber" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="115" type="stmt" count="7"/>
+      <line num="118" type="method" name="mobileNumber" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="120" type="stmt" count="7"/>
+      <line num="123" type="method" name="getIdentifier" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="125" type="stmt" count="10"/>
+      <line num="128" type="method" name="setUserId" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="130" type="stmt" count="1"/>
+      <line num="131" type="stmt" count="1"/>
+      <line num="133" type="method" name="getUserId" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="135" type="stmt" count="0"/>
+      <line num="138" type="method" name="fromExisting" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="140" type="stmt" count="8"/>
+      <line num="141" type="stmt" count="8"/>
+      <line num="142" type="stmt" count="8"/>
+      <line num="143" type="stmt" count="8"/>
+      <line num="144" type="stmt" count="8"/>
+      <line num="145" type="stmt" count="8"/>
+      <line num="148" type="method" name="__toString" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="150" type="stmt" count="0"/>
+      <metrics loc="152" ncloc="152" classes="1" methods="20" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="33" elements="62" coveredelements="47"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/OrderStatus.php">
+      <class name="Domain\Model\Order\OrderStatus" namespace="global">
+        <metrics complexity="8" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="8" elements="19" coveredelements="11"/>
+      </class>
+      <line num="24" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="18"/>
+      <line num="27" type="stmt" count="18"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="32" type="stmt" count="17"/>
+      <line num="33" type="stmt" count="17"/>
+      <line num="35" type="method" name="isSame" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="45" type="method" name="from" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="50" type="method" name="to" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="55" type="method" name="getId" visibility="public" complexity="1" crap="1" count="11"/>
+      <line num="57" type="stmt" count="11"/>
+      <line num="60" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="62" type="stmt" count="1"/>
+      <metrics loc="64" ncloc="64" classes="1" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="8" elements="19" coveredelements="11"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/State/OrderConfirmedState.php">
+      <class name="Domain\Model\Order\State\OrderConfirmedState" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="11" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/State/OrderCreatedState.php">
+      <class name="Domain\Model\Order\State\OrderCreatedState" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="confirm" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/State/OrderFailedState.php">
+      <class name="Domain\Model\Order\State\OrderFailedState" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="12" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="17" type="method" name="fail" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <metrics loc="21" ncloc="21" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/State/OrderState.php">
+      <class name="Domain\Model\Order\State\OrderState" namespace="global">
+        <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
+      </class>
+      <line num="13" type="method" name="uncreate" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="15" type="stmt" count="4"/>
+      <line num="18" type="method" name="create" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="23" type="method" name="fail" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="28" type="method" name="confirm" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="30" type="stmt" count="5"/>
+      <metrics loc="32" ncloc="32" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/State/OrderStateable.php">
+      <metrics loc="39" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/State/OrderTransition.php">
+      <class name="Domain\Model\Order\State\OrderTransition" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="12"/>
+      <line num="16" type="stmt" count="12"/>
+      <line num="17" type="stmt" count="6"/>
+      <line num="18" type="stmt" count="3"/>
+      <line num="19" type="stmt" count="2"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="11"/>
+      <line num="24" type="method" name="nextState" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="26" type="stmt" count="10"/>
+      <metrics loc="28" ncloc="28" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/State/OrderUncreatedState.php">
+      <class name="Domain\Model\Order\State\OrderUncreatedState" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="create" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/Order/UnableToHandleOrders.php">
+      <class name="Domain\Model\Order\UnableToHandleOrders" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/Events/ProjectStatusChanged.php">
+      <class name="Domain\Model\ProjectReports\Events\ProjectStatusChanged" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/IProjectRepository.php">
+      <metrics loc="12" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/MessageConfigurator.php">
+      <class name="Domain\Model\ProjectReports\MessageConfigurator" namespace="global">
+        <metrics complexity="12" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="29" elements="34" coveredelements="32"/>
+      </class>
+      <line num="55" type="method" name="__construct" visibility="public" complexity="7" crap="7" count="3"/>
+      <line num="59" type="stmt" count="3"/>
+      <line num="60" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="64" type="stmt" count="2"/>
+      <line num="65" type="stmt" count="2"/>
+      <line num="67" type="stmt" count="2"/>
+      <line num="68" type="stmt" count="2"/>
+      <line num="69" type="stmt" count="2"/>
+      <line num="70" type="stmt" count="2"/>
+      <line num="73" type="stmt" count="2"/>
+      <line num="74" type="stmt" count="1"/>
+      <line num="77" type="stmt" count="2"/>
+      <line num="78" type="stmt" count="1"/>
+      <line num="81" type="stmt" count="2"/>
+      <line num="82" type="stmt" count="1"/>
+      <line num="85" type="stmt" count="2"/>
+      <line num="86" type="stmt" count="2"/>
+      <line num="87" type="stmt" count="2"/>
+      <line num="89" type="stmt" count="2"/>
+      <line num="90" type="stmt" count="1"/>
+      <line num="92" type="stmt" count="2"/>
+      <line num="94" type="method" name="asArray" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="96" type="stmt" count="0"/>
+      <line num="99" type="method" name="extractParameters" visibility="private" complexity="3" crap="3" count="2"/>
+      <line num="101" type="stmt" count="2"/>
+      <line num="103" type="stmt" count="2"/>
+      <line num="105" type="stmt" count="2"/>
+      <line num="107" type="stmt" count="2"/>
+      <line num="108" type="stmt" count="1"/>
+      <line num="111" type="stmt" count="2"/>
+      <line num="114" type="stmt" count="2"/>
+      <line num="117" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="119" type="stmt" count="1"/>
+      <metrics loc="121" ncloc="121" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="29" elements="34" coveredelements="32"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/Project.php">
+      <metrics loc="36" ncloc="36" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/ProjectEntity.php">
+      <class name="Domain\Model\ProjectReports\ProjectEntity" namespace="global">
+        <metrics complexity="14" methods="13" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="17" elements="38" coveredelements="24"/>
+      </class>
+      <line num="27" type="method" name="match" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="29" type="stmt" count="2"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="38" type="method" name="change" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="40" type="stmt" count="1"/>
+      <line num="41" type="stmt" count="1"/>
+      <line num="43" type="method" name="getStatus" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="45" type="stmt" count="3"/>
+      <line num="48" type="method" name="payload" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="53" type="method" name="orderNumber" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="58" type="method" name="mobile" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="63" type="method" name="messageConfigurator" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="65" type="stmt" count="0"/>
+      <line num="68" type="method" name="wasPreviouslyReported" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="70" type="stmt" count="2"/>
+      <line num="73" type="method" name="withMessageConfigurator" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="75" type="stmt" count="1"/>
+      <line num="76" type="stmt" count="1"/>
+      <line num="79" type="method" name="getIdentifier" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="81" type="stmt" count="2"/>
+      <line num="84" type="method" name="fromOrderAndStatus" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="86" type="stmt" count="0"/>
+      <line num="87" type="stmt" count="0"/>
+      <line num="88" type="stmt" count="0"/>
+      <line num="91" type="method" name="from" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="93" type="stmt" count="4"/>
+      <line num="94" type="stmt" count="4"/>
+      <line num="95" type="stmt" count="4"/>
+      <line num="96" type="stmt" count="4"/>
+      <line num="97" type="stmt" count="4"/>
+      <line num="98" type="stmt" count="4"/>
+      <line num="101" type="method" name="__toString" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="103" type="stmt" count="0"/>
+      <metrics loc="105" ncloc="105" classes="1" methods="13" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="17" elements="38" coveredelements="24"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/ProjectEntityNotFound.php">
+      <class name="Domain\Model\ProjectReports\ProjectEntityNotFound" namespace="global">
+        <metrics complexity="13" methods="13" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="26" coveredelements="0"/>
+      </class>
+      <line num="21" type="method" name="getStatus" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="26" type="method" name="payload" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="31" type="method" name="orderNumber" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="36" type="method" name="match" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="41" type="method" name="change" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="46" type="method" name="mobile" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="51" type="method" name="wasPreviouslyReported" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="56" type="method" name="withMessageConfigurator" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="61" type="method" name="messageConfigurator" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="63" type="stmt" count="0"/>
+      <line num="66" type="method" name="getIdentifier" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="68" type="stmt" count="0"/>
+      <line num="71" type="method" name="from" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="73" type="stmt" count="0"/>
+      <line num="76" type="method" name="fromOrderAndStatus" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="78" type="stmt" count="0"/>
+      <line num="81" type="method" name="__toString" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="83" type="stmt" count="0"/>
+      <metrics loc="85" ncloc="85" classes="1" methods="13" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="26" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/ProjectStatus.php">
+      <class name="Domain\Model\ProjectReports\ProjectStatus" namespace="global">
+        <metrics complexity="8" methods="6" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="7" elements="20" coveredelements="9"/>
+      </class>
+      <line num="26" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="5"/>
+      <line num="29" type="stmt" count="5"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="4"/>
+      <line num="35" type="stmt" count="4"/>
+      <line num="37" type="method" name="isSame" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="44" type="stmt" count="0"/>
+      <line num="47" type="method" name="fromId" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="49" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="53" type="method" name="to" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="58" type="method" name="getId" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="63" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="65" type="stmt" count="4"/>
+      <metrics loc="67" ncloc="67" classes="1" methods="6" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="7" elements="20" coveredelements="9"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/State/OrderAcceptedState.php">
+      <class name="Domain\Model\ProjectReports\State\OrderAcceptedState" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="startProject" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/State/ProjectFinishedState.php">
+      <class name="Domain\Model\ProjectReports\State\ProjectFinishedState" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="reportProject" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/State/ProjectStartedState.php">
+      <class name="Domain\Model\ProjectReports\State\ProjectStartedState" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="finishProject" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/State/ProjectState.php">
+      <class name="Domain\Model\ProjectReports\State\ProjectState" namespace="global">
+        <metrics complexity="5" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="10" coveredelements="0"/>
+      </class>
+      <line num="13" type="method" name="uncreate" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="18" type="method" name="acceptOrder" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="23" type="method" name="startProject" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="28" type="method" name="finishProject" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="33" type="method" name="reportProject" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <metrics loc="37" ncloc="37" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="10" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/State/ProjectStateable.php">
+      <metrics loc="47" ncloc="22" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/State/ProjectTransition.php">
+      <class name="Domain\Model\ProjectReports\State\ProjectTransition" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="9" elements="12" coveredelements="10"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1.00" count="4"/>
+      <line num="16" type="stmt" count="4"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="18" type="stmt" count="2"/>
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="3"/>
+      <line num="26" type="method" name="nextStatus" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <metrics loc="30" ncloc="30" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="9" elements="12" coveredelements="10"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/State/ProjectUncreatedState.php">
+      <class name="Domain\Model\ProjectReports\State\ProjectUncreatedState" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="acceptOrder" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/ProjectReports/UnableToHandleProject.php">
+      <class name="Domain\Model\ProjectReports\UnableToHandleProject" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="18" ncloc="18" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/Events/UserAssignedToOrder.php">
+      <class name="Domain\Model\User\Events\UserAssignedToOrder" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/Events/UserAuthenticated.php">
+      <class name="Domain\Model\User\Events\UserAuthenticated" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/Events/UserIdentified.php">
+      <class name="Domain\Model\User\Events\UserIdentified" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/Events/UserUpdated.php">
+      <class name="Domain\Model\User\Events\UserUpdated" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/Events/UserVerificationCodeRequested.php">
+      <class name="Domain\Model\User\Events\UserVerificationCodeRequested" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/Events/UserWithOrderNumberAuthenticated.php">
+      <class name="Domain\Model\User\Events\UserWithOrderNumberAuthenticated" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/IUserRepository.php">
+      <metrics loc="20" ncloc="20" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/UnableToHandleUser.php">
+      <class name="Domain\Model\User\UnableToHandleUser" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="17" ncloc="17" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/User.php">
+      <metrics loc="52" ncloc="52" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Model/User/UserEntity.php">
+      <class name="Domain\Model\User\UserEntity" namespace="global">
+        <metrics complexity="25" methods="19" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="30" elements="69" coveredelements="40"/>
+      </class>
+      <line num="45" type="method" name="identify" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="50" type="method" name="requestCode" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="55" type="method" name="authenticate" visibility="public" complexity="3" crap="3.04" count="1"/>
+      <line num="57" type="stmt" count="1"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="60" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="62" type="stmt" count="1"/>
+      <line num="63" type="stmt" count="1"/>
+      <line num="65" type="method" name="authenticateWithOrderNumber" visibility="public" complexity="3" crap="12" count="0"/>
+      <line num="67" type="stmt" count="0"/>
+      <line num="68" type="stmt" count="0"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="71" type="stmt" count="0"/>
+      <line num="72" type="stmt" count="0"/>
+      <line num="74" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="76" type="stmt" count="0"/>
+      <line num="77" type="stmt" count="0"/>
+      <line num="79" type="stmt" count="0"/>
+      <line num="80" type="stmt" count="0"/>
+      <line num="82" type="method" name="userIdentified" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="84" type="stmt" count="1"/>
+      <line num="87" type="method" name="name" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="89" type="stmt" count="0"/>
+      <line num="92" type="method" name="email" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="94" type="stmt" count="0"/>
+      <line num="97" type="method" name="mobile" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="99" type="stmt" count="1"/>
+      <line num="102" type="method" name="password" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="104" type="stmt" count="1"/>
+      <line num="107" type="method" name="token" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="109" type="stmt" count="0"/>
+      <line num="112" type="method" name="orderId" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="114" type="stmt" count="1"/>
+      <line num="117" type="method" name="orderNumber" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="119" type="stmt" count="1"/>
+      <line num="122" type="method" name="andFinally" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="125" type="stmt" count="1"/>
+      <line num="127" type="stmt" count="1"/>
+      <line num="128" type="stmt" count="1"/>
+      <line num="130" type="method" name="getIdentifier" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="132" type="stmt" count="2"/>
+      <line num="135" type="method" name="setIdentifier" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="137" type="stmt" count="1"/>
+      <line num="138" type="stmt" count="1"/>
+      <line num="140" type="method" name="fromExisting" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="142" type="stmt" count="1"/>
+      <line num="143" type="stmt" count="1"/>
+      <line num="144" type="stmt" count="1"/>
+      <line num="145" type="stmt" count="1"/>
+      <line num="146" type="stmt" count="1"/>
+      <line num="149" type="method" name="from" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="151" type="stmt" count="0"/>
+      <line num="152" type="stmt" count="0"/>
+      <line num="153" type="stmt" count="0"/>
+      <line num="156" type="method" name="of" visibility="public" complexity="2" crap="2.04" count="1"/>
+      <line num="159" type="stmt" count="1"/>
+      <line num="160" type="stmt" count="0"/>
+      <line num="161" type="stmt" count="0"/>
+      <line num="163" type="stmt" count="1"/>
+      <line num="164" type="stmt" count="1"/>
+      <line num="165" type="stmt" count="1"/>
+      <line num="166" type="stmt" count="1"/>
+      <line num="167" type="stmt" count="1"/>
+      <line num="168" type="stmt" count="1"/>
+      <metrics loc="170" ncloc="168" classes="1" methods="19" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="50" coveredstatements="30" elements="69" coveredelements="40"/>
+    </file>
+    <file name="/var/www/src/Domain/Services/OrderTrackable.php">
+      <metrics loc="11" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Domain/Services/OrderTracker.php">
+      <class name="Domain\Services\OrderTracker" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="5" coveredelements="3"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="14" type="stmt" count="33"/>
+      <line num="16" type="method" name="fetchCurrent" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <metrics loc="20" ncloc="20" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="5" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Domain/Repositories/CacheUtils.php">
+      <class name="Infrastructure\Domain\Repositories\CacheUtils" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="14" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Domain/Repositories/OrderRepository.php">
+      <class name="Infrastructure\Domain\Repositories\OrderRepository" namespace="global">
+        <metrics complexity="10" methods="9" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="3" elements="42" coveredelements="4"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="22" type="stmt" count="33"/>
+      <line num="23" type="stmt" count="33"/>
+      <line num="25" type="method" name="getAll" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="33" type="method" name="get" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="44" type="stmt" count="0"/>
+      <line num="47" type="method" name="getBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="51" type="stmt" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="58" type="method" name="getByNumber" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="62" type="stmt" count="0"/>
+      <line num="63" type="stmt" count="0"/>
+      <line num="64" type="stmt" count="0"/>
+      <line num="65" type="stmt" count="0"/>
+      <line num="68" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="71" type="stmt" count="0"/>
+      <line num="72" type="stmt" count="0"/>
+      <line num="74" type="method" name="updateUserFrom" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="76" type="stmt" count="0"/>
+      <line num="77" type="stmt" count="0"/>
+      <line num="78" type="stmt" count="0"/>
+      <line num="80" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="82" type="stmt" count="0"/>
+      <line num="85" type="method" name="remove" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="87" type="stmt" count="0"/>
+      <metrics loc="89" ncloc="89" classes="1" methods="9" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="3" elements="42" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Domain/Repositories/OrderRepositoryFake.php">
+      <class name="Infrastructure\Domain\Repositories\OrderRepositoryFake" namespace="global">
+        <metrics complexity="8" methods="8" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="4" elements="17" coveredelements="7"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="17" type="stmt" count="10"/>
+      <line num="19" type="method" name="getAll" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="24" type="method" name="get" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="29" type="method" name="getBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="35" type="method" name="create" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="39" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="44" type="method" name="updateUserFrom" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="48" type="method" name="remove" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <metrics loc="52" ncloc="52" classes="1" methods="8" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="4" elements="17" coveredelements="7"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Domain/Repositories/ProjectRepository.php">
+      <class name="Infrastructure\Domain\Repositories\ProjectRepository" namespace="global">
+        <metrics complexity="8" methods="7" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="3" elements="34" coveredelements="4"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="22" type="stmt" count="33"/>
+      <line num="23" type="stmt" count="33"/>
+      <line num="25" type="method" name="getAll" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="33" type="method" name="get" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="45" type="stmt" count="0"/>
+      <line num="48" type="method" name="getBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="51" type="stmt" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="56" type="stmt" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="61" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="63" type="stmt" count="0"/>
+      <line num="64" type="stmt" count="0"/>
+      <line num="66" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="68" type="stmt" count="0"/>
+      <line num="71" type="method" name="remove" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="73" type="stmt" count="0"/>
+      <metrics loc="75" ncloc="75" classes="1" methods="7" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="3" elements="34" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Domain/Repositories/ProjectRepositoryFake.php">
+      <class name="Infrastructure\Domain\Repositories\ProjectRepositoryFake" namespace="global">
+        <metrics complexity="7" methods="7" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="2" elements="15" coveredelements="3"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="18" type="stmt" count="3"/>
+      <line num="21" type="method" name="getAll" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="26" type="method" name="get" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="31" type="method" name="getBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="46" type="method" name="remove" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="48" type="stmt" count="0"/>
+      <metrics loc="50" ncloc="50" classes="1" methods="7" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="2" elements="15" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Domain/Repositories/ProjectRepositoryInMemory.php">
+      <class name="Infrastructure\Domain\Repositories\ProjectRepositoryInMemory" namespace="global">
+        <metrics complexity="7" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="19" coveredelements="0"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="20" type="method" name="getAll" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="25" type="method" name="get" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="30" type="method" name="getBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="40" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="45" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="50" type="method" name="remove" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <metrics loc="54" ncloc="54" classes="1" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="19" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Domain/Repositories/UserRepository.php">
+      <class name="Infrastructure\Domain\Repositories\UserRepository" namespace="global">
+        <metrics complexity="7" methods="6" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="3" elements="30" coveredelements="4"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="16" type="stmt" count="7"/>
+      <line num="17" type="stmt" count="7"/>
+      <line num="19" type="method" name="get" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="24" type="method" name="getById" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="29" type="method" name="getWithOrder" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="38" type="method" name="create" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="44" type="stmt" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="49" type="stmt" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="55" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="59" type="stmt" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="61" type="stmt" count="0"/>
+      <line num="62" type="stmt" count="0"/>
+      <metrics loc="63" ncloc="63" classes="1" methods="6" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="3" elements="30" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Domain/Repositories/UserRepositoryFake.php">
+      <class name="Infrastructure\Domain\Repositories\UserRepositoryFake" namespace="global">
+        <metrics complexity="5" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="10" coveredelements="0"/>
+      </class>
+      <line num="13" type="method" name="get" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="18" type="method" name="getById" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="23" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="28" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="33" type="method" name="getWithOrder" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <metrics loc="37" ncloc="37" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="10" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Entities/OrderModel.php">
+      <class name="Infrastructure\Framework\Entities\OrderModel" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="21" type="method" name="user" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <metrics loc="25" ncloc="22" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Entities/ProjectStatusReportsModel.php">
+      <class name="Infrastructure\Framework\Entities\ProjectStatusReportsModel" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="15" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Entities/TraitUuid.php">
+      <class name="Infrastructure\Framework\Entities\TraitUuid" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+      </class>
+      <line num="14" type="method" name="getIncrementing" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="16" type="stmt" count="2"/>
+      <line num="25" type="method" name="getKeyType" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <metrics loc="29" ncloc="18" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Entities/UserModel.php">
+      <class name="Infrastructure\Framework\Entities\UserModel" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="40" type="method" name="order" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <metrics loc="44" ncloc="31" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Exceptions/Handler.php">
+      <class name="Infrastructure\Framework\Exceptions\Handler" namespace="global">
+        <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="72" coveredstatements="29" elements="74" coveredelements="29"/>
+      </class>
+      <line num="51" type="method" name="register" visibility="public" complexity="3" crap="4.86" count="33"/>
+      <line num="54" type="stmt" count="33"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="56" type="stmt" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="59" type="stmt" count="33"/>
+      <line num="61" type="stmt" count="33"/>
+      <line num="62" type="stmt" count="0"/>
+      <line num="63" type="stmt" count="0"/>
+      <line num="65" type="stmt" count="0"/>
+      <line num="66" type="stmt" count="33"/>
+      <line num="68" type="stmt" count="33"/>
+      <line num="69" type="stmt" count="0"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="72" type="stmt" count="0"/>
+      <line num="73" type="stmt" count="33"/>
+      <line num="75" type="stmt" count="33"/>
+      <line num="76" type="stmt" count="0"/>
+      <line num="77" type="stmt" count="0"/>
+      <line num="79" type="stmt" count="0"/>
+      <line num="80" type="stmt" count="33"/>
+      <line num="82" type="stmt" count="33"/>
+      <line num="83" type="stmt" count="0"/>
+      <line num="84" type="stmt" count="0"/>
+      <line num="86" type="stmt" count="0"/>
+      <line num="87" type="stmt" count="33"/>
+      <line num="89" type="stmt" count="33"/>
+      <line num="90" type="stmt" count="0"/>
+      <line num="91" type="stmt" count="0"/>
+      <line num="93" type="stmt" count="0"/>
+      <line num="94" type="stmt" count="33"/>
+      <line num="96" type="stmt" count="33"/>
+      <line num="97" type="stmt" count="0"/>
+      <line num="98" type="stmt" count="0"/>
+      <line num="100" type="stmt" count="0"/>
+      <line num="101" type="stmt" count="33"/>
+      <line num="103" type="stmt" count="33"/>
+      <line num="104" type="stmt" count="0"/>
+      <line num="105" type="stmt" count="0"/>
+      <line num="106" type="stmt" count="0"/>
+      <line num="108" type="stmt" count="0"/>
+      <line num="109" type="stmt" count="33"/>
+      <line num="111" type="stmt" count="33"/>
+      <line num="112" type="stmt" count="0"/>
+      <line num="113" type="stmt" count="0"/>
+      <line num="115" type="stmt" count="0"/>
+      <line num="116" type="stmt" count="33"/>
+      <line num="118" type="stmt" count="33"/>
+      <line num="119" type="stmt" count="0"/>
+      <line num="120" type="stmt" count="0"/>
+      <line num="122" type="stmt" count="0"/>
+      <line num="123" type="stmt" count="33"/>
+      <line num="125" type="stmt" count="33"/>
+      <line num="126" type="stmt" count="0"/>
+      <line num="127" type="stmt" count="0"/>
+      <line num="129" type="stmt" count="0"/>
+      <line num="130" type="stmt" count="33"/>
+      <line num="132" type="stmt" count="33"/>
+      <line num="133" type="stmt" count="0"/>
+      <line num="134" type="stmt" count="0"/>
+      <line num="136" type="stmt" count="0"/>
+      <line num="137" type="stmt" count="33"/>
+      <line num="139" type="stmt" count="33"/>
+      <line num="140" type="stmt" count="0"/>
+      <line num="141" type="stmt" count="0"/>
+      <line num="143" type="stmt" count="0"/>
+      <line num="144" type="stmt" count="33"/>
+      <line num="146" type="stmt" count="33"/>
+      <line num="147" type="stmt" count="0"/>
+      <line num="148" type="stmt" count="0"/>
+      <line num="149" type="stmt" count="33"/>
+      <line num="150" type="stmt" count="33"/>
+      <line num="152" type="method" name="asJson" visibility="private" complexity="1" crap="2" count="0"/>
+      <line num="154" type="stmt" count="0"/>
+      <metrics loc="156" ncloc="141" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="72" coveredstatements="29" elements="74" coveredelements="29"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/CommonFakerProvider.php">
+      <class name="Infrastructure\Framework\Providers\CommonFakerProvider" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="12" type="method" name="eventBus" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="14" type="stmt" count="10"/>
+      <line num="15" type="stmt" count="10"/>
+      <line num="16" type="stmt" count="10"/>
+      <metrics loc="18" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/CommonServiceProvider.php">
+      <class name="Infrastructure\Framework\Providers\CommonServiceProvider" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
+      </class>
+      <line num="21" type="method" name="register" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="23" type="stmt" count="33"/>
+      <line num="24" type="stmt" count="33"/>
+      <line num="25" type="stmt" count="33"/>
+      <line num="26" type="stmt" count="33"/>
+      <line num="27" type="stmt" count="7"/>
+      <line num="28" type="stmt" count="33"/>
+      <line num="29" type="stmt" count="33"/>
+      <line num="30" type="stmt" count="33"/>
+      <line num="31" type="stmt" count="33"/>
+      <line num="32" type="stmt" count="33"/>
+      <metrics loc="33" ncloc="28" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/NotificationServiceProvider.php">
+      <class name="Infrastructure\Framework\Providers\NotificationServiceProvider" namespace="global">
+        <metrics complexity="10" methods="8" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="52" elements="61" coveredelements="59"/>
+      </class>
+      <line num="32" type="method" name="boot" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="34" type="stmt" count="33"/>
+      <line num="35" type="stmt" count="33"/>
+      <line num="36" type="stmt" count="33"/>
+      <line num="37" type="stmt" count="33"/>
+      <line num="38" type="stmt" count="33"/>
+      <line num="45" type="method" name="register" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="47" type="stmt" count="33"/>
+      <line num="48" type="stmt" count="33"/>
+      <line num="49" type="stmt" count="33"/>
+      <line num="51" type="method" name="loadDependencies" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="54" type="stmt" count="33"/>
+      <line num="55" type="stmt" count="33"/>
+      <line num="56" type="stmt" count="33"/>
+      <line num="58" type="stmt" count="33"/>
+      <line num="59" type="stmt" count="33"/>
+      <line num="60" type="stmt" count="33"/>
+      <line num="62" type="stmt" count="33"/>
+      <line num="63" type="stmt" count="33"/>
+      <line num="64" type="stmt" count="33"/>
+      <line num="66" type="stmt" count="33"/>
+      <line num="67" type="stmt" count="33"/>
+      <line num="68" type="stmt" count="33"/>
+      <line num="70" type="stmt" count="33"/>
+      <line num="71" type="stmt" count="33"/>
+      <line num="72" type="stmt" count="33"/>
+      <line num="73" type="stmt" count="33"/>
+      <line num="74" type="stmt" count="33"/>
+      <line num="75" type="stmt" count="33"/>
+      <line num="77" type="method" name="loadUseCases" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="80" type="stmt" count="33"/>
+      <line num="81" type="stmt" count="33"/>
+      <line num="82" type="stmt" count="33"/>
+      <line num="83" type="stmt" count="33"/>
+      <line num="84" type="stmt" count="33"/>
+      <line num="88" type="stmt" count="33"/>
+      <line num="89" type="stmt" count="33"/>
+      <line num="90" type="stmt" count="33"/>
+      <line num="91" type="stmt" count="33"/>
+      <line num="92" type="stmt" count="33"/>
+      <line num="96" type="stmt" count="33"/>
+      <line num="97" type="stmt" count="33"/>
+      <line num="98" type="stmt" count="33"/>
+      <line num="99" type="stmt" count="33"/>
+      <line num="100" type="stmt" count="33"/>
+      <line num="104" type="stmt" count="33"/>
+      <line num="105" type="stmt" count="33"/>
+      <line num="106" type="stmt" count="33"/>
+      <line num="107" type="stmt" count="33"/>
+      <line num="108" type="stmt" count="33"/>
+      <line num="110" type="stmt" count="33"/>
+      <line num="117" type="method" name="registerConfig" visibility="protected" complexity="1" crap="1" count="33"/>
+      <line num="119" type="stmt" count="33"/>
+      <line num="126" type="method" name="registerTranslations" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="128" type="stmt" count="33"/>
+      <line num="135" type="method" name="registerFactories" visibility="public" complexity="3" crap="3" count="33"/>
+      <line num="137" type="stmt" count="33"/>
+      <line num="138" type="stmt" count="33"/>
+      <line num="140" type="stmt" count="33"/>
+      <line num="147" type="method" name="provides" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="149" type="stmt" count="0"/>
+      <metrics loc="151" ncloc="117" classes="1" methods="8" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="52" elements="61" coveredelements="59"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/OrderFakerProvider.php">
+      <class name="Infrastructure\Framework\Providers\OrderFakerProvider" namespace="global">
+        <metrics complexity="9" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="20" elements="30" coveredelements="28"/>
+      </class>
+      <line num="24" type="method" name="invalidStatus" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="29" type="method" name="payload" visibility="public" complexity="1" crap="1" count="9"/>
+      <line num="31" type="stmt" count="9"/>
+      <line num="32" type="stmt" count="9"/>
+      <line num="33" type="stmt" count="9"/>
+      <line num="34" type="stmt" count="9"/>
+      <line num="35" type="stmt" count="9"/>
+      <line num="49" type="method" name="invalidPayload" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="52" type="stmt" count="1"/>
+      <line num="59" type="method" name="order" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="61" type="stmt" count="6"/>
+      <line num="64" type="method" name="orderStatus" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="66" type="stmt" count="1"/>
+      <line num="69" type="method" name="orderTransition" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="71" type="stmt" count="0"/>
+      <line num="74" type="method" name="orderRepository" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="76" type="stmt" count="10"/>
+      <line num="79" type="method" name="confirmEventHandler" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="81" type="stmt" count="5"/>
+      <line num="82" type="stmt" count="5"/>
+      <line num="83" type="stmt" count="5"/>
+      <line num="84" type="stmt" count="5"/>
+      <line num="85" type="stmt" count="5"/>
+      <line num="88" type="method" name="createEventHandler" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="90" type="stmt" count="5"/>
+      <line num="91" type="stmt" count="5"/>
+      <line num="92" type="stmt" count="5"/>
+      <line num="93" type="stmt" count="5"/>
+      <metrics loc="95" ncloc="95" classes="1" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="20" elements="30" coveredelements="28"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/OrderServiceProvider.php">
+      <class name="Infrastructure\Framework\Providers\OrderServiceProvider" namespace="global">
+        <metrics complexity="10" methods="8" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="51" coveredstatements="41" elements="59" coveredelements="46"/>
+      </class>
+      <line num="35" type="method" name="boot" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="37" type="stmt" count="33"/>
+      <line num="38" type="stmt" count="33"/>
+      <line num="39" type="stmt" count="33"/>
+      <line num="40" type="stmt" count="33"/>
+      <line num="41" type="stmt" count="33"/>
+      <line num="48" type="method" name="register" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="50" type="stmt" count="33"/>
+      <line num="51" type="stmt" count="33"/>
+      <line num="52" type="stmt" count="33"/>
+      <line num="54" type="method" name="loadDependencies" visibility="public" complexity="1" crap="1.01" count="33"/>
+      <line num="57" type="stmt" count="33"/>
+      <line num="58" type="stmt" count="33"/>
+      <line num="59" type="stmt" count="33"/>
+      <line num="61" type="stmt" count="33"/>
+      <line num="62" type="stmt" count="0"/>
+      <line num="63" type="stmt" count="33"/>
+      <line num="65" type="stmt" count="33"/>
+      <line num="66" type="stmt" count="0"/>
+      <line num="67" type="stmt" count="33"/>
+      <line num="69" type="stmt" count="33"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="71" type="stmt" count="33"/>
+      <line num="73" type="stmt" count="33"/>
+      <line num="74" type="stmt" count="0"/>
+      <line num="75" type="stmt" count="33"/>
+      <line num="77" type="stmt" count="33"/>
+      <line num="78" type="stmt" count="33"/>
+      <line num="79" type="stmt" count="33"/>
+      <line num="80" type="stmt" count="33"/>
+      <line num="82" type="method" name="loadUseCases" visibility="public" complexity="1" crap="1.02" count="33"/>
+      <line num="85" type="stmt" count="33"/>
+      <line num="86" type="stmt" count="33"/>
+      <line num="87" type="stmt" count="33"/>
+      <line num="88" type="stmt" count="0"/>
+      <line num="89" type="stmt" count="0"/>
+      <line num="90" type="stmt" count="33"/>
+      <line num="94" type="stmt" count="33"/>
+      <line num="95" type="stmt" count="33"/>
+      <line num="96" type="stmt" count="33"/>
+      <line num="97" type="stmt" count="0"/>
+      <line num="98" type="stmt" count="0"/>
+      <line num="99" type="stmt" count="33"/>
+      <line num="103" type="stmt" count="33"/>
+      <line num="104" type="stmt" count="33"/>
+      <line num="105" type="stmt" count="33"/>
+      <line num="106" type="stmt" count="0"/>
+      <line num="107" type="stmt" count="33"/>
+      <line num="109" type="stmt" count="33"/>
+      <line num="116" type="method" name="registerConfig" visibility="protected" complexity="1" crap="1" count="33"/>
+      <line num="118" type="stmt" count="33"/>
+      <line num="125" type="method" name="registerTranslations" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="127" type="stmt" count="33"/>
+      <line num="134" type="method" name="registerFactories" visibility="public" complexity="3" crap="3" count="33"/>
+      <line num="136" type="stmt" count="33"/>
+      <line num="137" type="stmt" count="33"/>
+      <line num="139" type="stmt" count="33"/>
+      <line num="146" type="method" name="provides" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="148" type="stmt" count="0"/>
+      <metrics loc="150" ncloc="117" classes="1" methods="8" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="51" coveredstatements="41" elements="59" coveredelements="46"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/ProjectFakerProvider.php">
+      <class name="Infrastructure\Framework\Providers\ProjectFakerProvider" namespace="global">
+        <metrics complexity="8" methods="8" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="13" elements="22" coveredelements="20"/>
+      </class>
+      <line num="21" type="method" name="invalidProjectStatus" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="26" type="method" name="payloadProject" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="28" type="stmt" count="3"/>
+      <line num="29" type="stmt" count="3"/>
+      <line num="30" type="stmt" count="3"/>
+      <line num="31" type="stmt" count="3"/>
+      <line num="46" type="method" name="invalidProjectPayload" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="51" type="method" name="project" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="56" type="method" name="projectStatus" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="61" type="method" name="projectTransition" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="63" type="stmt" count="0"/>
+      <line num="66" type="method" name="projectRepository" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="68" type="stmt" count="3"/>
+      <line num="71" type="method" name="changeEventHandler" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="73" type="stmt" count="3"/>
+      <line num="74" type="stmt" count="3"/>
+      <line num="75" type="stmt" count="3"/>
+      <line num="76" type="stmt" count="3"/>
+      <metrics loc="78" ncloc="78" classes="1" methods="8" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="13" elements="22" coveredelements="20"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/ProjectServiceProvider.php">
+      <class name="Infrastructure\Framework\Providers\ProjectServiceProvider" namespace="global">
+        <metrics complexity="10" methods="8" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="36" elements="47" coveredelements="42"/>
+      </class>
+      <line num="30" type="method" name="boot" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="32" type="stmt" count="33"/>
+      <line num="33" type="stmt" count="33"/>
+      <line num="34" type="stmt" count="33"/>
+      <line num="35" type="stmt" count="33"/>
+      <line num="36" type="stmt" count="33"/>
+      <line num="43" type="method" name="register" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="45" type="stmt" count="33"/>
+      <line num="46" type="stmt" count="33"/>
+      <line num="47" type="stmt" count="33"/>
+      <line num="49" type="method" name="loadDependencies" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="52" type="stmt" count="33"/>
+      <line num="53" type="stmt" count="33"/>
+      <line num="54" type="stmt" count="33"/>
+      <line num="56" type="stmt" count="33"/>
+      <line num="57" type="stmt" count="33"/>
+      <line num="58" type="stmt" count="33"/>
+      <line num="60" type="stmt" count="33"/>
+      <line num="61" type="stmt" count="33"/>
+      <line num="62" type="stmt" count="33"/>
+      <line num="63" type="stmt" count="33"/>
+      <line num="65" type="method" name="loadUseCases" visibility="public" complexity="1" crap="1.00" count="33"/>
+      <line num="68" type="stmt" count="33"/>
+      <line num="69" type="stmt" count="33"/>
+      <line num="70" type="stmt" count="33"/>
+      <line num="71" type="stmt" count="33"/>
+      <line num="72" type="stmt" count="33"/>
+      <line num="73" type="stmt" count="33"/>
+      <line num="74" type="stmt" count="33"/>
+      <line num="75" type="stmt" count="33"/>
+      <line num="79" type="stmt" count="33"/>
+      <line num="80" type="stmt" count="33"/>
+      <line num="81" type="stmt" count="33"/>
+      <line num="82" type="stmt" count="0"/>
+      <line num="83" type="stmt" count="0"/>
+      <line num="84" type="stmt" count="33"/>
+      <line num="86" type="stmt" count="33"/>
+      <line num="93" type="method" name="registerConfig" visibility="protected" complexity="1" crap="1" count="33"/>
+      <line num="95" type="stmt" count="33"/>
+      <line num="102" type="method" name="registerTranslations" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="104" type="stmt" count="33"/>
+      <line num="111" type="method" name="registerFactories" visibility="public" complexity="3" crap="3" count="33"/>
+      <line num="113" type="stmt" count="33"/>
+      <line num="114" type="stmt" count="33"/>
+      <line num="116" type="stmt" count="33"/>
+      <line num="123" type="method" name="provides" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="125" type="stmt" count="0"/>
+      <metrics loc="127" ncloc="95" classes="1" methods="8" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="36" elements="47" coveredelements="42"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/RouteServiceProvider.php">
+      <class name="Infrastructure\Framework\Providers\RouteServiceProvider" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+      </class>
+      <line num="33" type="method" name="boot" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="36" type="stmt" count="33"/>
+      <line num="37" type="stmt" count="33"/>
+      <line num="39" type="stmt" count="33"/>
+      <line num="41" type="stmt" count="33"/>
+      <line num="43" type="stmt" count="33"/>
+      <line num="44" type="stmt" count="33"/>
+      <line num="45" type="stmt" count="33"/>
+      <line num="46" type="stmt" count="33"/>
+      <metrics loc="47" ncloc="28" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Providers/UserServiceProvider.php">
+      <class name="Infrastructure\Framework\Providers\UserServiceProvider" namespace="global">
+        <metrics complexity="10" methods="8" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="70" coveredstatements="61" elements="78" coveredelements="66"/>
+      </class>
+      <line num="42" type="method" name="boot" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="44" type="stmt" count="33"/>
+      <line num="45" type="stmt" count="33"/>
+      <line num="46" type="stmt" count="33"/>
+      <line num="47" type="stmt" count="33"/>
+      <line num="48" type="stmt" count="33"/>
+      <line num="55" type="method" name="register" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="57" type="stmt" count="33"/>
+      <line num="58" type="stmt" count="33"/>
+      <line num="59" type="stmt" count="33"/>
+      <line num="61" type="method" name="loadDependencies" visibility="public" complexity="1" crap="1.00" count="33"/>
+      <line num="64" type="stmt" count="33"/>
+      <line num="65" type="stmt" count="5"/>
+      <line num="66" type="stmt" count="33"/>
+      <line num="68" type="stmt" count="33"/>
+      <line num="69" type="stmt" count="5"/>
+      <line num="70" type="stmt" count="33"/>
+      <line num="72" type="stmt" count="33"/>
+      <line num="73" type="stmt" count="5"/>
+      <line num="74" type="stmt" count="33"/>
+      <line num="76" type="stmt" count="33"/>
+      <line num="77" type="stmt" count="5"/>
+      <line num="78" type="stmt" count="33"/>
+      <line num="80" type="stmt" count="33"/>
+      <line num="81" type="stmt" count="0"/>
+      <line num="82" type="stmt" count="33"/>
+      <line num="84" type="stmt" count="33"/>
+      <line num="85" type="stmt" count="0"/>
+      <line num="86" type="stmt" count="33"/>
+      <line num="88" type="stmt" count="33"/>
+      <line num="89" type="stmt" count="7"/>
+      <line num="90" type="stmt" count="33"/>
+      <line num="92" type="stmt" count="33"/>
+      <line num="93" type="stmt" count="7"/>
+      <line num="94" type="stmt" count="33"/>
+      <line num="95" type="stmt" count="33"/>
+      <line num="97" type="method" name="loadUseCases" visibility="public" complexity="1" crap="1.01" count="33"/>
+      <line num="100" type="stmt" count="33"/>
+      <line num="101" type="stmt" count="33"/>
+      <line num="102" type="stmt" count="33"/>
+      <line num="103" type="stmt" count="5"/>
+      <line num="104" type="stmt" count="5"/>
+      <line num="105" type="stmt" count="33"/>
+      <line num="109" type="stmt" count="33"/>
+      <line num="110" type="stmt" count="33"/>
+      <line num="111" type="stmt" count="33"/>
+      <line num="112" type="stmt" count="5"/>
+      <line num="113" type="stmt" count="5"/>
+      <line num="114" type="stmt" count="33"/>
+      <line num="118" type="stmt" count="33"/>
+      <line num="119" type="stmt" count="33"/>
+      <line num="120" type="stmt" count="33"/>
+      <line num="121" type="stmt" count="0"/>
+      <line num="122" type="stmt" count="0"/>
+      <line num="123" type="stmt" count="33"/>
+      <line num="127" type="stmt" count="33"/>
+      <line num="128" type="stmt" count="33"/>
+      <line num="129" type="stmt" count="33"/>
+      <line num="130" type="stmt" count="0"/>
+      <line num="131" type="stmt" count="0"/>
+      <line num="132" type="stmt" count="33"/>
+      <line num="136" type="stmt" count="33"/>
+      <line num="137" type="stmt" count="33"/>
+      <line num="138" type="stmt" count="33"/>
+      <line num="139" type="stmt" count="0"/>
+      <line num="140" type="stmt" count="0"/>
+      <line num="141" type="stmt" count="33"/>
+      <line num="143" type="stmt" count="33"/>
+      <line num="150" type="method" name="registerConfig" visibility="protected" complexity="1" crap="1" count="33"/>
+      <line num="152" type="stmt" count="33"/>
+      <line num="159" type="method" name="registerTranslations" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="161" type="stmt" count="33"/>
+      <line num="168" type="method" name="registerFactories" visibility="public" complexity="3" crap="3" count="33"/>
+      <line num="170" type="stmt" count="33"/>
+      <line num="171" type="stmt" count="33"/>
+      <line num="173" type="stmt" count="33"/>
+      <line num="180" type="method" name="provides" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="182" type="stmt" count="0"/>
+      <metrics loc="184" ncloc="149" classes="1" methods="8" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="70" coveredstatements="61" elements="78" coveredelements="66"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Routes/api.php">
+      <line num="13" type="stmt" count="33"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="33"/>
+      <line num="17" type="stmt" count="33"/>
+      <line num="18" type="stmt" count="33"/>
+      <line num="19" type="stmt" count="33"/>
+      <line num="20" type="stmt" count="33"/>
+      <line num="21" type="stmt" count="33"/>
+      <line num="22" type="stmt" count="33"/>
+      <line num="24" type="stmt" count="33"/>
+      <line num="25" type="stmt" count="33"/>
+      <line num="26" type="stmt" count="33"/>
+      <line num="28" type="stmt" count="33"/>
+      <line num="29" type="stmt" count="33"/>
+      <line num="30" type="stmt" count="33"/>
+      <line num="31" type="stmt" count="33"/>
+      <line num="32" type="stmt" count="33"/>
+      <line num="33" type="stmt" count="33"/>
+      <line num="34" type="stmt" count="33"/>
+      <line num="35" type="stmt" count="33"/>
+      <line num="36" type="stmt" count="33"/>
+      <line num="37" type="stmt" count="33"/>
+      <line num="39" type="stmt" count="33"/>
+      <line num="40" type="stmt" count="33"/>
+      <line num="41" type="stmt" count="33"/>
+      <line num="42" type="stmt" count="33"/>
+      <line num="44" type="stmt" count="33"/>
+      <line num="45" type="stmt" count="33"/>
+      <line num="46" type="stmt" count="33"/>
+      <line num="48" type="stmt" count="33"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="51" type="stmt" count="0"/>
+      <line num="66" type="stmt" count="0"/>
+      <line num="67" type="stmt" count="33"/>
+      <line num="68" type="stmt" count="33"/>
+      <metrics loc="68" ncloc="68" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="35" coveredstatements="31" elements="35" coveredelements="31"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Routes/web.php">
+      <metrics loc="3" ncloc="3" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Transformers/AuthenticationResource.php">
+      <class name="Infrastructure\Framework\Transformers\AuthenticationResource" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="toArray" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <metrics loc="22" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Transformers/BasicOrderResource.php">
+      <class name="Infrastructure\Framework\Transformers\BasicOrderResource" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="toArray" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <metrics loc="22" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Transformers/NotificationResource.php">
+      <class name="Infrastructure\Framework\Transformers\NotificationResource" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="toArray" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <metrics loc="22" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Transformers/OrderResource.php">
+      <class name="Infrastructure\Framework\Transformers\OrderResource" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="9" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="toArray" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="29" ncloc="23" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="9" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Transformers/ProjectResource.php">
+      <class name="Infrastructure\Framework\Transformers\ProjectResource" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="13" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="toArray" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <metrics loc="34" ncloc="28" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="13" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Framework/Transformers/UserResource.php">
+      <class name="Infrastructure\Framework\Transformers\UserResource" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="toArray" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <metrics loc="22" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Infrastructure/Kafka/ProducerFake.php">
+      <class name="Infrastructure\Kafka\ProducerFake" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="9" type="method" name="sendMessage" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="11" type="stmt" count="1"/>
+      <metrics loc="12" ncloc="12" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/Stream/ProjectStatusChangesConsumeHandler.php">
+      <class name="Interfaces\Incoming\Stream\ProjectStatusChangesConsumeHandler" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="2" elements="13" coveredelements="3"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="18" type="stmt" count="33"/>
+      <line num="20" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <metrics loc="34" ncloc="34" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="2" elements="13" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/Stream/SendEmailNotificationsConsumeHandler.php">
+      <class name="Interfaces\Incoming\Stream\SendEmailNotificationsConsumeHandler" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="2" elements="7" coveredelements="3"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="16" type="stmt" count="33"/>
+      <line num="18" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <metrics loc="23" ncloc="23" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="2" elements="7" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/Stream/SendSmsNotificationsConsumeHandler.php">
+      <class name="Interfaces\Incoming\Stream\SendSmsNotificationsConsumeHandler" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="2" elements="7" coveredelements="3"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="16" type="stmt" count="33"/>
+      <line num="18" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <metrics loc="23" ncloc="23" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="2" elements="7" coveredelements="3"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/WebApi/Controllers/AuthenticationController.php">
+      <class name="Interfaces\Incoming\WebApi\Controllers\AuthenticationController" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="14" type="method" name="authByOrderNumber" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <metrics loc="19" ncloc="19" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/WebApi/Controllers/CodeResenderController.php">
+      <class name="Interfaces\Incoming\WebApi\Controllers\CodeResenderController" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="13" type="method" name="resend" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <metrics loc="18" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/WebApi/Controllers/NotificationController.php">
+      <class name="Interfaces\Incoming\WebApi\Controllers\NotificationController" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+      </class>
+      <line num="17" type="method" name="notifyBySms" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="25" type="method" name="notifyByEmail" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <metrics loc="32" ncloc="32" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/WebApi/Controllers/OrderController.php">
+      <class name="Interfaces\Incoming\WebApi\Controllers\OrderController" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="12" coveredelements="0"/>
+      </class>
+      <line num="19" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="28" type="method" name="confirm" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="35" type="method" name="fetchBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <metrics loc="39" ncloc="39" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="12" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/WebApi/Controllers/ProjectController.php">
+      <class name="Interfaces\Incoming\WebApi\Controllers\ProjectController" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="11" type="method" name="fetchBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/WebApi/Controllers/UserController.php">
+      <class name="Interfaces\Incoming\WebApi\Controllers\UserController" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="14" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <metrics loc="19" ncloc="19" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="/var/www/src/Interfaces/Incoming/WebApi/Requests/OrderCreatedRequest.php">
+      <class name="Interfaces\Incoming\WebApi\Requests\OrderCreatedRequest" namespace="global">
+        <metrics complexity="6" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="12" coveredelements="0"/>
+      </class>
+      <line num="19" type="method" name="authorize" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="29" type="method" name="rules" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="34" type="method" name="failedValidation" visibility="protected" complexity="1" crap="2" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="39" type="method" name="getValidatorInstance" visibility="protected" complexity="3" crap="12" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="45" type="stmt" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <metrics loc="49" ncloc="39" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="12" coveredelements="0"/>
+    </file>
+    <metrics files="145" loc="4936" ncloc="4641" classes="111" methods="342" coveredmethods="170" conditionals="0" coveredconditionals="0" statements="1125" coveredstatements="684" elements="1467" coveredelements="854"/>
+  </project>
+</coverage>

@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddd-backend-worker-generalpurpose
+  labels:
+    app: phpfpm-worker-generalpurpose
+    version: "d4b6446"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpfpm-worker-generalpurpose
+  template:
+    metadata:
+      labels:
+        app: phpfpm-worker-generalpurpose
+    spec:
+      containers:
+        - name: phpfpm-worker-generalpurpose
+          image: registry.digitalocean.com/ddd/ddd-backend-php:d4b6446
+          command: ["/bin/sh", "-c"]
+          args:
+            [
+              "-c",
+              "php artisan consumers:work --topic=general.purpose;",
+            ]
+          ports:
+            - containerPort: 9000
+              name: php
+          envFrom:
+            - secretRef:
+                name: phpfpm-env

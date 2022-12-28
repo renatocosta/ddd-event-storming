@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  default.conf: "server {\n\tlisten 80;\n\tserver_name localhost;\n\troot /var/www/Common/Framework/public;\n\tindex
+    index.php index.html;\n\n\tlocation / {\n        auth_basic off;\n\t\ttry_files
+    $uri $uri/ /index.php?$args;\n\t}\n\n\tlocation ~ \\.php$ {\n\t\tinclude fastcgi_params;\n\t\tfastcgi_param
+    SCRIPT_FILENAME $document_root$fastcgi_script_name;\n\t\tfastcgi_pass backend:9000;\n\t
+    \   fastcgi_index index.php;\n\t}\n\n\t#Enforcing auth to access Swagger UI url\n
+    \   location /api/documentation {\n            try_files $uri $uri/ /index.php?$args;\n
+    \      \t\tauth_basic \"Restricted Content\";\n        \tauth_basic_user_file
+    /etc/nginx/.htpasswd;\n\t}\n\n}\n"
+kind: ConfigMap
+metadata:
+  name: nginx-config

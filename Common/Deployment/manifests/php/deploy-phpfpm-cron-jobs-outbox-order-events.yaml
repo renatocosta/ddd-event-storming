@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: ddd-backend-cron-jobs-outbox-order-events
+  labels:
+    app: phpfpm-cron-jobs-outbox-order-events
+    version: "097f29a"
+spec:
+  schedule: "*/2 * * * *"
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
+  successfulJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 0
+      template:
+        spec:
+          containers:
+            - name: phpfpm
+              image: registry.digitalocean.com/ddd/ddd-backend-php:097f29a
+              command:
+                - php
+              args:
+                - artisan
+                - outbox-order:dispatch
+              envFrom:
+                - secretRef:
+                    name: phpfpm-env
+          restartPolicy: Never

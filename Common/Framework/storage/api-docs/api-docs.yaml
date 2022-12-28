@@ -1,0 +1,934 @@
+openapi: 3.0.0
+info:
+  title: DDD' API
+  description: >-
+    DDD API services
+  version: 0.1.9
+servers:
+  - url: "http://192.168.49.2:31688/v1"
+    description: Local
+  - url: "https://app-stg.ddd.com/v1"
+    description: Staging
+  - url: "https://app.ddd.com/v1"
+    description: Production
+paths:
+  "/order/{order_number}":
+    get:
+      security:
+        - bearerAuth: []
+      summary: Track an order by number
+      tags:
+        - order
+      parameters:
+        - name: order_number
+          in: path
+          required: true
+          description: Order number 3 letters 3 numbers (AAA123)
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      _type:
+                        type: string
+                      id:
+                        type: string
+                      project:
+                        type: object
+                        properties:
+                          start_date:
+                            type: integer
+                      customer:
+                        type: object
+                        properties:
+                          property:
+                            type: object
+                            properties:
+                              size:
+                                type: string
+                              address:
+                                type: string
+                              zipcode:
+                                type: string
+                              extra_details:
+                                type: string
+                              number_of_bedrooms:
+                                type: string
+                              number_of_bathrooms:
+                                type: string
+                          personal_information:
+                            type: object
+                            properties:
+                              name:
+                                type: string
+                              email:
+                                type: string
+                              phone_number:
+                                type: string
+                              country_code:
+                                type: string
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/order/":
+    get:
+      security:
+        - bearerAuth: []
+      summary: Return all created orders
+      tags:
+        - order
+      parameters:
+        - name: page
+          in: query
+          required: true
+          description: Page nº
+          default: 1
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  /order:
+    post:
+      summary: Create a new order
+      tags:
+        - order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OrderRequest"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      _type:
+                        type: string
+                      id:
+                        type: string
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "500":
+          description: Internal Server Error
+  /order/reviews:
+    post:
+      security:
+        - bearerAuth: []
+      summary: Create a new review
+      tags:
+        - order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                project_id:
+                  type: string
+                rating:
+                  type: string
+                  default: 1, 2, 3, 4 or 5
+                review:
+                  type: string
+      responses:
+        "200":
+          description: OK
+        "422":
+          description: Unprocessable
+        "404":
+          description: Not Found
+  /order/tip:
+    post:
+      security:
+        - bearerAuth: []
+      summary: Create a new tip
+      tags:
+        - order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                project_id:
+                  type: string
+                amount:
+                  type: number
+                currency:
+                  type: string
+      responses:
+        "200":
+          description: OK
+        "422":
+          description: Unprocessable
+        "404":
+          description: Not Found
+  /order/confirm/{id}/{sms_verification_code}:
+    patch:
+      summary: Confirm an order
+      tags:
+        - order
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Order ID
+          type: string
+        - name: sms_verification_code
+          in: path
+          required: true
+          description: Sms verification code
+          type: int
+      responses:
+        "204":
+          description: OK
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      _type:
+                        type: string
+                      id:
+                        type: string
+                      token:
+                        type: string
+                      order_number:
+                        type: string
+                      user_id:
+                        type: string
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  /order/check-address-availability/{address}/{unit_number}:
+    get:
+      summary: Check if address/unit number are in use
+      tags:
+        - order
+      parameters:
+        - name: address
+          in: path
+          required: true
+          type: string
+        - name: unit_number
+          in: path
+          allowEmptyValue: true
+          type: string
+      responses:
+        "200":
+          description: OK
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  in_use:
+                    type: boolean
+                  order_id:
+                    type: string
+  "/order/cleaners":
+    patch:
+      summary: Add more cleaners
+      tags:
+        - order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                order_id:
+                  type: string
+                cleaners:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                      name:
+                        type: string                        
+      responses:
+        "200":
+          description: Updated
+        "422":
+          description: Unprocessable
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/project/follow-up/{order_number}":
+    get:
+      security:
+        - bearerAuth: []
+      summary: Return a set all of project status changes
+      tags:
+        - project
+      parameters:
+        - name: order_number
+          in: path
+          required: true
+          description: Order Number
+          type: string
+      responses:
+        "200":
+          description: OK
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/project/follow-up/{order_number}/{status}":
+    get:
+      security:
+        - bearerAuth: []
+      summary: Return a set of project status changes that occurred during the offer accepted, confirmed, and finished.
+      tags:
+        - project
+      parameters:
+        - name: order_number
+          in: path
+          required: true
+          description: Order number 3 letters 3 numbers (AAA123)
+          type: string
+        - name: status
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [1, 2, 3, 4, 5, 10, 11]
+          description: >
+            Status:
+             * `OrderAccepted` = 1
+             * `ProjectStarted` = 2
+             * `ProjectFinished` = 3
+             * `ProjectReported` = 4
+             * `PaymentSucceeded` = 5
+             * `ProjectCancelled` = 10
+             * `PaymentFailed` = 11
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      _type:
+                        type: string
+                      id:
+                        type: string
+                      cleaner:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                          name:
+                            type: string
+                          phone:
+                            type: string
+                          profile_image:
+                            type: object
+                            properties:
+                              url:
+                                type: string
+                          price_per_hour:
+                            type: string
+                      project:
+                        type: object
+                        properties:
+                          id:
+                            type: integer
+                          start_date:
+                            type: integer
+                      customer:
+                        type: object
+                        properties:
+                          location:
+                            type: object
+                            properties:
+                              timezone:
+                                type: string
+                          property:
+                            type: object
+                            properties:
+                              id:
+                                type: integer
+                              size:
+                                type: string
+                              address:
+                                type: string
+                              zipcode:
+                                type: string
+                              extra_details:
+                                type: string
+                              number_of_bedrooms:
+                                type: string
+                              number_of_bathrooms:
+                                type: string
+                          personal_information:
+                            type: object
+                            properties:
+                              name:
+                                type: string
+                              email:
+                                type: string
+                              phone_number:
+                                type: string
+                              country_code:
+                                type: string
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/project/{order_id}/report":
+    get:
+      security:
+        - bearerAuth: []
+      summary: Return a project finished.
+      tags:
+        - project
+      parameters:
+        - name: order_id
+          in: path
+          required: true
+          description: Order ID (UUID)
+          type: string
+      responses:
+        "200":
+          description: OK
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/project/follow-up/state/{order_number}":
+    get:
+      security:
+        - bearerAuth: []
+      summary: Return project most recent state.
+      tags:
+        - project
+      parameters:
+        - name: order_number
+          in: path
+          required: true
+          description: Order number 3 letters 3 numbers (AAA123)
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                properties:
+                  _type:
+                    type: string
+                  state:
+                    type: integer
+                  cancellation_reason:
+                    type: string
+                    default: ProjectCancelledCreditCardAuthFailed or ProjectCancelledNoOneAcceptedTheOffer
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/project/share/{order_id}":
+    post:
+      security:
+        - bearerAuth: []
+      summary: Share report
+      tags:
+        - project
+      parameters:
+        - name: order_id
+          in: path
+          required: true
+          description: Order Id
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ShareProjectRequest"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "500":
+          description: Internal Server Error
+  "/project/":
+    get:
+      security:
+        - bearerAuth: []
+      summary: Return all created projects
+      tags:
+        - project
+      parameters:
+        - name: page
+          in: query
+          required: true
+          description: Page nº
+          default: 1
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/authentication/byOrderNumber":
+    post:
+      summary: Authenticate an user by order number and mobile/email
+      tags:
+        - user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                order_number:
+                  type: string
+                email_mobile:
+                  type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      _type:
+                        type: string
+                      token:
+                        type: string
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error         
+  "/authentication":
+    post:
+      summary: Authenticate an user by email and password
+      tags:
+        - user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      _type:
+                        type: string
+                      token:
+                        type: string
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/user/update":
+    put:
+      summary: Update user information
+      tags:
+        - user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                order_id:
+                  type: string
+                mobile_number:
+                  type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      _type:
+                        type: string
+                      mobile:
+                        type: string
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/user/resend-code":
+    post:
+      summary: Resend SMS verification code
+      tags:
+        - user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                order_id:
+                  type: string
+                rating:
+      responses:
+        "200":
+          description: OK
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  "/user/":
+    get:
+      security:
+        - bearerAuth: []
+      summary: Return all created users
+      tags:
+        - user
+      parameters:
+        - name: page
+          in: query
+          default: 1
+          required: true
+          description: Page nº
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+  /payment-method/update:
+    patch:
+      security:
+        - bearerAuth: []
+      summary: Update payment method
+      tags:
+        - payment-method
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payment_method_token:
+                  type: string
+      responses:
+        "200":
+          description: OK
+        "422":
+          description: Unprocessable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableResponse"
+        "404":
+          description: Not Found
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  schemas:
+    OrderRequest:
+      type: object
+      properties:
+        partners:
+          type: object
+          properties:
+            linkmink:
+              type: object
+              properties:
+                referral_data:
+                  type: string
+        cleaners:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              name:
+                type: string
+        customer:
+          type: object
+          properties:
+            payment:
+              type: object
+              properties:
+                payment_method_token:
+                  type: string
+                card_brand:
+                  type: string
+                card_number_last4:
+                  type: string
+                  default: 5678
+            property:
+              type: object
+              properties:
+                address:
+                  type: string
+                  default: "320 N Washington St, East Prairie, Missouri"
+                zipcode:
+                  type: string
+                  default: "30303"
+                state:
+                  type: string
+                city:
+                  type: string
+                extra_details:
+                  type: string
+                number_of_bedrooms:
+                  type: integer
+                  default: 4
+                number_of_bathrooms:
+                  type: integer
+                  default: 3
+                size:
+                  type: integer
+                  default: 10
+                location_coordinates:
+                  type: object
+                  properties:
+                    lat:
+                      type: string
+                      default: "-23.533773"
+                    long:
+                      type: string
+                      default: "-46.625290"
+            personal_information:
+              type: object
+              properties:
+                name:
+                  type: string
+                  default: "George Smith"
+                phone_number:
+                  type: string
+                email:
+                  type: string
+                  default: "renter@deproperty.com"
+                country_code:
+                  type: string
+                  default: "USA"
+            location:
+              type: object
+              properties:
+                timezone:
+                  type: string
+        project:
+          type: object
+          properties:
+            start_date:
+              type: integer
+              default: 1648825200
+            preferred_time:
+              type: object
+              properties:
+                period:
+                  type: string
+                  default: "morning/afternoon"
+                start_date:
+                  type: integer
+                  default: "1656320400"
+                end_date:
+                  type: integer
+                  default: "1656342000"
+    ShareProjectRequest:
+      type: object
+      properties:
+        channel:
+          type: string
+          default: sms or email
+        phone_number:
+          type: string
+        email:
+          type: string
+        name:
+          type: string
+        report_text:
+          type: string
+    OrderResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            _type:
+              type: string
+            id:
+              type: string
+    ProjectResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            _type:
+              type: string
+    UnprocessableResponse:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            status:
+              type: string
+            title:
+              type: string
+            description:
+              type: string

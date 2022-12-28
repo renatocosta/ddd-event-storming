@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddd-backend-worker-businessanalyticstrackorder
+  labels:
+    app: phpfpm-worker-businessanalyticstrackorder
+    version: "097f29a"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpfpm-worker-businessanalyticstrackorder
+  template:
+    metadata:
+      labels:
+        app: phpfpm-worker-businessanalyticstrackorder
+    spec:
+      containers:
+        - name: phpfpm-worker-businessanalyticstrackorder
+          image: registry.digitalocean.com/ddd/ddd-backend-php:097f29a
+          command: ["/bin/sh", "-c"]
+          args:
+            [
+              "-c",
+              "php artisan consumers:work --topic=business.analytics.trackorder;",
+            ]
+          ports:
+            - containerPort: 9000
+              name: php
+          envFrom:
+            - secretRef:
+                name: phpfpm-env

@@ -1,0 +1,62 @@
+name: DDD QA process
+on: [push, pull_request]
+jobs:
+  laravel:
+    name: Laravel (PHP ${{ matrix.php-versions }} on ${{ matrix.operating-system }})
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      fail-fast: false
+      matrix:
+        operating-system: [ubuntu-latest]
+        php-versions: ["8.0"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Docs: https://github.com/shivammathur/setup-php
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          extensions: mbstring, dom, fileinfo
+          coverage: xdebug
+        env:
+          COMPOSER_TOKEN: ghp_lkLAÇL4987UOIJSLKSLKSJLKAM
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          # Use composer.json for key, if composer.lock is not committed.
+          # key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+
+      - name: Install Composer dependencies
+        working-directory: ./Common/Framework
+        run: composer install --no-progress --prefer-dist --optimize-autoloader --ignore-platform-reqs
+
+      - name: Cache Clear
+        working-directory: ./Common/Framework
+        run: php artisan cache:clear
+
+      - name: Test with phpunit
+        env:
+          STRIPE_API_KEY: lkjlkjoikjk79876987
+          MIXPANEL_TOKEN: lkjlkjçlklçk987
+        working-directory: ./Common/Framework
+        run: XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-clover clover.xml
+      - name: Run codacy-coverage-reporter
+        uses: codacy/codacy-coverage-reporter-action@v1
+        with:
+          project-token: 70cfecfe76fa40e5a9f350087d82b96d
+          coverage-reports: Common/Framework/clover.xml
+      - name: Mutation Testing with Infection PHP
+        env:
+          STRIPE_API_KEY: LÇJKKJKg
+          MIXPANEL_TOKEN: LÇJKKLÇ      
+        working-directory: ./Common/Framework
+        run: XDEBUG_MODE=coverage php vendor/bin/infection --logger-github

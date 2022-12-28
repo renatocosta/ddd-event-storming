@@ -1,0 +1,97 @@
+name: "Staging Deploy"
+
+on:
+  workflow_run:
+    workflows: ["DDD QA process"]
+    types:
+      - completed
+env:
+  CR_REPO: registry.digitalocean.com
+  CR_NAME: moveout
+  REPO_NAME: ${{ github.event.repository.name }}
+  ### Replace the variable content below
+  SERVICE_PORT: 9000
+
+jobs:
+  image-build:
+    environment: development
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checking out the repo
+        uses: actions/checkout@v2
+
+      - name: Build container image
+        run: docker image build -t $CR_REPO/$CR_NAME/$REPO_NAME-php:$(echo $GITHUB_SHA | head -c7) -f Common/Deployment/docker/php.dockerfile .
+
+      - name: Installing doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+      - name: Log in DigitalOcean CR
+        run: doctl registry login --expiry-seconds 600
+
+      - name: Push image to DigitalOcean CR
+        run: docker push $CR_REPO/$CR_NAME/$REPO_NAME-php:$(echo $GITHUB_SHA | head -c7)
+
+  deploy:
+    environment: development
+    needs: image-build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out the repo
+        uses: actions/checkout@v2
+
+      - name: Replace variables on kubernetes manifest templates
+        env:
+          ECR_REPOSITORY: ${{ github.event.repository.name }}
+        run: |
+          export SHORT_SHA=${GITHUB_SHA::7}
+          export BRANCH_NAME=${GITHUB_REF##*/}
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-worker-smsnotifications/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-worker-smsnotifications.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-worker-emailnotifications/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-worker-emailnotifications.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-worker-statuschanges/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-worker-statuschanges.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-worker-crmimportleads/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-worker-crmimportleads.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-worker-businessanalyticstrackorder/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-worker-businessanalyticstrackorder.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-worker-workspacepostmessages/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-worker-workspacepostmessages.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-worker-affiliatecreateconversions/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-worker-affiliatecreateconversions.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-cron-jobs-outbox-order-events/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-cron-jobs-outbox-order-events.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}-worker-generalpurpose/; s/(image: )(.*)/\1${CR_REPO}\/${CR_NAME}\/${REPO_NAME}-php:${SHORT_SHA}/g; s/(version: )(.*)/\1\"${SHORT_SHA}\"/" Common/Deployment/manifests/php/deploy-phpfpm-worker-generalpurpose.yaml
+          sed -ri "4s/(name: )(.*$)/\1${REPO_NAME}/; s/(version: )(.*)/\1\"${SHORT_SHA}\"/; s/(port: )(.*)/\1${SERVICE_PORT}/" Common/Deployment/manifests/php/service-phpfpm.yaml
+          sed -ri "s/(fastcgi_pass)(.*)(:9000)/\1 ${REPO_NAME}\3/" Common/Deployment/manifests/nginx/cm-nginx-conf.yaml
+
+      - name: Commit updated manifests
+        run: |
+          git config --global user.name 'ci/cd - User'
+          git config --global user.email 'cicd@users.noreply.github.com'
+          git commit -am "Updating manifests"
+          git push
+
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+      - name: Save DigitalOcean kubeconfig
+        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 moveout-k8s
+
+      - name: Deploy to DigitalOcean Kubernetes
+        run: |
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-worker-smsnotifications.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-worker-emailnotifications.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-worker-statuschanges.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-worker-crmimportleads.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-worker-businessanalyticstrackorder.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-worker-workspacepostmessages.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-worker-affiliatecreateconversions.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-cron-jobs-outbox-order-events.yaml
+          kubectl apply -f Common/Deployment/manifests/php/deploy-phpfpm-worker-generalpurpose.yaml
+          kubectl apply -f Common/Deployment/manifests/php/service-phpfpm.yaml
+          kubectl apply -f Common/Deployment/manifests/nginx/cm-nginx-conf.yaml
+
+      ## For a future implementation
+      # - name: Deleting old nginx pods
+      #   run: kubectl delete pods -l app=nginx-web
