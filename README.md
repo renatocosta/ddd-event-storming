@@ -70,7 +70,7 @@ This is a list of the main goals of this repository:
 
 Event Storming is a light, live workshop. One of the possible outputs of this workshop is presented here. Even if you are not doing Event Storming workshops, this type of process presentation can be very valuable to you and your stakeholders.
 
-This domain was selected for the purposes of this project based on the (https://miro.com/app/board/o9J_l2Ibf8U=/?moveToWidget=3458764514498509207&cot=14) or as shown below.
+This domain was selected for the purposes of this project as shown below.
 
 ![Image](./Common/Docs/event-storming.jpg?raw=true)
 

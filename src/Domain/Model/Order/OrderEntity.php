@@ -95,10 +95,10 @@ final class OrderEntity extends AggregateRoot implements Order
 
     public function markAsReviewed(): void
     {
-        $this->reviewed = true;
         if ($this->getProjectId() == 0) {
             throw UnableToHandleProjectReports::dueTo(UnableToHandleOrders::INVALID_REVIEW);
         }
+        $this->reviewed = true;
         $this->raise(new ProjectReviewed($this));
     }
 
