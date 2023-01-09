@@ -167,12 +167,6 @@ final class OrderEntity extends AggregateRoot implements Order
         return $this;
     }
 
-    public function from(HumanCode $orderNumber): self
-    {
-        $this->orderNumber = $orderNumber;
-        return $this;
-    }
-
     public function orderNumber(): HumanCode
     {
         return $this->orderNumber;
@@ -222,14 +216,4 @@ final class OrderEntity extends AggregateRoot implements Order
         return $this;
     }
 
-    public function withProjectId(Identified $identifier, OrderStatus $status, HumanCode $orderNumber, Payload $payload, Mobile $mobile, int $projectId): self
-    {
-        $this->identifier = $identifier;
-        $this->status = $status;
-        $this->orderNumber = $orderNumber;
-        $this->payload = $payload;
-        $this->mobileNumber = $mobile;
-        $this->projectId = $projectId;
-        return $this;
-    }
 }

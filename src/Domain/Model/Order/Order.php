@@ -52,13 +52,9 @@ interface Order
 
     public function of(Identified $identifier, int $customerId, int $propertyId, HumanCode $orderNumber, Payload $payload): self;
 
-    public function from(HumanCode $humanCode): self;
-
     public function getIdentifier(): ?Identified;
 
     public function fromExisting(Identified $identifier, int $customerId, int $propertyId, OrderStatus $status, HumanCode $orderNumber, Payload $payload, Mobile $mobile, int $projectId = 0, bool $reviewed = false): self;
-
-    public function withProjectId(Identified $identifier, OrderStatus $status, HumanCode $orderNumber, Payload $payload, Mobile $mobile, int $projectId): self;
 
     public function getCustomerId(): int;
 
